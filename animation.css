@@ -15,3 +15,8 @@ img{
     max-width: 250px;
     max-height: 400px;
 }
+
+#dog{
+    position: absolute;
+    bottom: 0;
+}
