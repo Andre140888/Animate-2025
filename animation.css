@@ -20,3 +20,7 @@ img{
     position: absolute;
     bottom: 0;
 }
+#boss{
+    position: absolute;
+    bottom: 200px;
+}
