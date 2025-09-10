@@ -39,11 +39,12 @@ img{
     0%{opacity: 0;}
     39%{opacity: 0;
         right: 0;
+        bottom: 0;
     }
-    40%{opacity: 100;}
-    59%{opacity: 100;}
-    60%{right: 110vw;
-        opacity: 0;}
+    55%{bottom:20vh}
+    59%{opacity: 100; bottom:0}
+    60%{right: 110vw;}
+    100%{opacity: 0;}
 }
 
 @keyframes slimeanimation-left{
