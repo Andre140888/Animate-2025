@@ -22,7 +22,6 @@ img{
 }
 
 #boss,
-#bird,
 #shield,
 #slime,
 #sword{
@@ -34,9 +33,13 @@ img{
     bottom: 0;
     animation: doganimation 22s linear forwards;
 }
-#boss{
+#bird{
     position: absolute;
     bottom: 200px;
+    right: 100px;
+    animation: birdanimation 20s linear forwards;
+    animation-delay: 15s;
+    opacity: 0;
 }
 @keyframes doganimation{
     0%   {left: 0px;}
@@ -55,4 +58,18 @@ img{
         opacity: 0;
         left:-10vw;
     }
+}
+@keyframes birdanimation{
+    0%{
+        opacity: 100;
+        right:100px;
+    }
+    20%{right:800px;}
+    40%{
+        top: 100px;
+        right:700px;
+    }
+    60%{left: 600px;}
+    80%{bottom: 100px;}
+    100%{right: 500px;}
 }
