@@ -23,44 +23,34 @@ img{
 #dog,
 #boss,
 #bird,
-#shield,
-#sword{
+#slime,
+#shield{
     display: none;
 }
 
-#slime{
+#sword{
     position: absolute;
-    right: 0;
-    bottom: 0;
-    animation: slimeanimation 12s linear forwards;
+    animation: swordanimation 10s linear forwards;
 }
 
-@keyframes slimeanimation{
-    0%{opacity: 0;}
-    39%{opacity: 0;
-        right: 0;
-        bottom: 0;
+@keyframes swordanimation {
+    0%{
+        top: 5vh;
+        left: 10vw;
     }
-    55%{bottom:20vh}
-    59%{opacity: 100; bottom:0}
-    60%{right: 110vw;}
-    100%{opacity: 0;}
-}
 
-@keyframes slimeanimation-left{
-    0%   {right: 0px;}
-    99% {opacity: 99%;}
-    100% {
-        right: 110vw;
-        opacity: 0;
+    50%{
+        top: 30vh;
+        left: 70vh;
     }
-}
 
-@keyframes slimeanimation-right{
-    0%   {left: 0px;}
-    99% {opacity: 99%;}
-    100% {
-        left: 110vw;
-        opacity: 0;
+    70%{
+        top: 30vh;
+        left: 70vh;
+    }
+
+    100%{
+        top: 100vh;
+        left: 90vw;
     }
 }
