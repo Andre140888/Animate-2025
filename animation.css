@@ -16,6 +16,14 @@ img{
     max-height: 400px;
 }
 
+#boss,
+#bird,
+#shield,
+#slime,
+#sword{
+    display: none;
+}
+
 #dog{
     position: absolute;
     bottom: 0;
