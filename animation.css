@@ -16,24 +16,37 @@ img{
     max-height: 400px;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
+#dog,
 #boss,
 #bird,
 #shield,
-#slime,
 #sword{
     display: none;
 }
 
-#dog{
+#slime{
     position: absolute;
+    right: 0;
     bottom: 0;
-    animation: doganimation 5s linear forwards;
+    animation: slimeanimation-right 3s linear forwards;
 }
-#boss{
-    position: absolute;
-    bottom: 200px;
+
+@keyframes slimeanimation-left{
+    0%   {right: 0px;}
+    100% {
+        right: 110vw;
+        display: none;
+    }
 }
-@keyframes doganimation{
+
+@keyframes slimeanimation-right{
     0%   {left: 0px;}
-    100% {left: 90vw}
+    100% {
+        left: 110vw;
+        display: none;
+    }
 }
