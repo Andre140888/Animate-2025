@@ -37,16 +37,18 @@ img{
 
 @keyframes slimeanimation-left{
     0%   {right: 0px;}
+    99% {opacity: 99%;}
     100% {
         right: 110vw;
-        display: none;
+        opacity: 0;
     }
 }
 
 @keyframes slimeanimation-right{
     0%   {left: 0px;}
+    99% {opacity: 99%;}
     100% {
         left: 110vw;
-        display: none;
+        opacity: 0;
     }
 }
