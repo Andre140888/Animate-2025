@@ -47,6 +47,12 @@ img{
     60%{opacity: 100;}
     80%{left:-110vw;}
     97%{left:-10vw;}
-    99%{opacity: 0;}
-    100%{opacity: 0;}
+    99%{
+        opacity: 0;
+        left:-10vw;
+}
+    100%{
+        opacity: 0;
+        left:-10vw;
+    }
 }
