@@ -32,7 +32,7 @@ img{
 #dog{
     position: absolute;
     bottom: 0;
-    animation: doganimation 5s linear forwards;
+    animation: doganimation 22s linear forwards;
 }
 #boss{
     position: absolute;
@@ -40,8 +40,13 @@ img{
 }
 @keyframes doganimation{
     0%   {left: 0px;}
-    90%{opacity: 80;}
-    98% {left: 110vw;}
+    20%{left: 110vw;}
+    30%{bottom:0px;}
+    40%{bottom:500px;}
+    50%{left:2000px;}
+    60%{opacity: 100;}
+    80%{left:-110vw;}
+    97%{left:-10vw;}
     99%{opacity: 0;}
     100%{opacity: 0;}
 }
