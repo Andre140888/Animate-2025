@@ -63,13 +63,27 @@ img{
     0%{
         opacity: 100;
         right:100px;
+        bottom: 200px;
     }
-    20%{right:800px;}
-    40%{
-        top: 100px;
+
+    15%{right:800px;}
+
+    30%{
+        bottom: 700px;
         right:700px;
     }
-    60%{left: 600px;}
-    80%{bottom: 100px;}
-    100%{right: 500px;}
+
+    45%{right: 1800px;}
+
+    60%{bottom: 100px;}
+    75%{right: 500px;}
+    90%{
+        right: 1200px;
+        bottom:300px;
+        }
+    100%{
+        right: -100px;
+        bottom:150px;
+        }
+
 }
