@@ -27,8 +27,13 @@ img{
 #dog{
     position: absolute;
     bottom: 0;
+    animation: doganimation 5s linear forwards;
 }
 #boss{
     position: absolute;
     bottom: 200px;
+}
+@keyframes doganimation{
+    0%   {left: 0px;}
+    100% {left: 90vw}
 }
