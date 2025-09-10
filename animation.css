@@ -65,16 +65,12 @@ img{
         right:100px;
         bottom: 200px;
     }
-
     15%{right:800px;}
-
     30%{
         bottom: 700px;
         right:700px;
     }
-
     45%{right: 1800px;}
-
     60%{bottom: 100px;}
     75%{right: 500px;}
     90%{
@@ -82,8 +78,10 @@ img{
         bottom:300px;
         }
     100%{
-        right: -100px;
-        bottom:150px;
+        right: 800px;
+        bottom:-100px;
         }
 
 }
+
+
