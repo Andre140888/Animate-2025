@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+        }
+        div{
+            max-width: fit-content;
+            height: fit-content;
+            padding: 20px;
+        }
+
+        #name{
+            font-size: 4rem;
+            text-align: center;
+        }
+
+        #video-element {
+         border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+
+    <h1 id="name">Gerard</h1>
+
+    <video id="video-element" width="640" height="480" autoplay muted>
+     <source src="videos/video-1.mp4" type="video/mp4">
+     Your browser does not support the video tag.
+    </video>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
