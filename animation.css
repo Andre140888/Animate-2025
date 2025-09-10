@@ -23,14 +23,40 @@ img{
 #dog,
 #boss,
 #bird,
-#slime,
-#shield{
+#slime{
     display: none;
 }
 
 #sword{
     position: absolute;
     animation: swordanimation 10s linear forwards;
+}
+
+#shield{
+    position: absolute;
+    animation: shieldanimation 20s linear forwards;
+}
+
+@keyframes shieldanimation{
+    0%{
+        right: 0;
+        top: 10vh;
+        opacity: 0;
+    }
+
+    39%{opacity: 0;}
+
+    40%{
+        opacity: 100;
+        right: 0;
+    }
+
+    60%{
+        right: 57vw;
+    }
+
+    100%{right: -20vw;}
+
 }
 
 @keyframes swordanimation {
