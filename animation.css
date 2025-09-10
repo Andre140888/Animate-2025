@@ -32,7 +32,18 @@ img{
     position: absolute;
     right: 0;
     bottom: 0;
-    animation: slimeanimation-right 3s linear forwards;
+    animation: slimeanimation 12s linear forwards;
+}
+
+@keyframes slimeanimation{
+    0%{opacity: 0;}
+    39%{opacity: 0;
+        right: 0;
+    }
+    40%{opacity: 100;}
+    59%{opacity: 100;}
+    60%{right: 110vw;
+        opacity: 0;}
 }
 
 @keyframes slimeanimation-left{
