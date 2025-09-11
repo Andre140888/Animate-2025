@@ -21,7 +21,6 @@ img{
     max-height: 400px;
 }
 
-#boss,
 #shield,
 #sword{
     display: none;
@@ -56,7 +55,15 @@ img{
     bottom: 200px;
     right: 100px;
     animation: birdanimation 20s linear forwards;
-    animation-delay: 10s;
+    animation-delay: 13s;
+    opacity: 0;
+}
+#boss{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    animation: bossanimation 20s linear forwards;
+    animation-delay: 20s;
     opacity: 0;
 }
 @keyframes doganimation{
@@ -100,4 +107,12 @@ img{
         bottom:-100px;
         }
 
+}
+@keyframes bossanimation{
+    0%{
+        
+    }
+    100%{
+
+    }
 }
