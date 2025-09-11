@@ -185,3 +185,11 @@ img{
         opacity: 0;
     }
 }
+
+#final-text {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    display: none;
+}
