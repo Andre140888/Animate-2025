@@ -1,11 +1,14 @@
-let dog = document.getElementById("dog");
-let boss = document.getElementById("boss");
-let bird = document.getElementById("bird");
-let shield = document.getElementById("shield");
-let slime = document.getElementById("slime");
-let sword = document.getElementById("sword");
+const animation_time = 30
+const delay = ms => new Promise(res => setTimeout(res, ms));
+const final_text = document.getElementById("final-text")
 
+console.log(final_text)
 
-iages = [
-    'dog'
-]
+const showtext = async () => {
+  await delay(5000);
+
+  final_text.style.display = "block";
+  
+};
+
+showtext()
