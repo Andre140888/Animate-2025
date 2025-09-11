@@ -21,9 +21,57 @@ img{
     max-height: 400px;
 }
 
-#shield,
 #sword{
-    display: none;
+    position: absolute;
+    animation: swordanimation 10s linear forwards;
+}
+
+#shield{
+    position: absolute;
+    animation: shieldanimation 20s linear forwards;
+}
+
+@keyframes shieldanimation{
+    0%{
+        right: 0;
+        opacity: 0;
+    }
+
+    39%{opacity: 0;}
+
+    40%{
+        opacity: 100;
+        right: 0;
+    }
+
+    60%{
+        right: 57vw;
+    }
+
+    100%{right: -20vw;}
+
+}
+
+@keyframes swordanimation {
+    0%{
+        top: 5vh;
+        left: 10vw;
+    }
+
+    50%{
+        top: 30vh;
+        left: 70vh;
+    }
+
+    70%{
+        top: 30vh;
+        left: 70vh;
+    }
+
+    100%{
+        top: 100vh;
+        left: 90vw;
+    }
 }
 
 #slime{
