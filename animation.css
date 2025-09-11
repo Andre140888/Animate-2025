@@ -56,7 +56,7 @@ img{
     bottom: 200px;
     right: 100px;
     animation: birdanimation 20s linear forwards;
-    animation-delay: 15s;
+    animation-delay: 10s;
     opacity: 0;
 }
 @keyframes doganimation{
