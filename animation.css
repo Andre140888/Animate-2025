@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'VarelaRound';
+    src: url('fonts/Varela_Round/VarelaRound-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 *{
     margin: 0;
     padding: 0;
@@ -10,8 +16,9 @@ body{
     width: 100vw;
     height: 100vh;
     background-position: center;
+    font-family: 'VarelaRound', sans-serif;
+    font-size: 30px;
 }
-
 ::-webkit-scrollbar {
     display: none;
 }
