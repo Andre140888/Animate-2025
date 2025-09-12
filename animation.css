@@ -61,6 +61,7 @@ img{
     50%{
         top: 30vh;
         left: 70vh;
+        transform: rotate(40grad)
     }
 
     70%{
@@ -119,7 +120,10 @@ img{
     20%{left: 110vw;}
     30%{bottom:0px;}
     40%{bottom:500px;}
-    50%{left:2000px;}
+    50%{
+        left:2000px;
+        transform: rotate(80grad);
+    }
     60%{opacity: 100;}
     80%{left:-110vw;}
     97%{left:-10vw;}
@@ -130,6 +134,7 @@ img{
     100%{
         opacity: 0;
         left:-10vw;
+        transform: rotate(0grad)
     }
 }
 @keyframes birdanimation{
