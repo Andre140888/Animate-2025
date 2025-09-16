@@ -106,17 +106,39 @@ img{
     animation: slimeanimation 12s linear forwards;
 }
 
-@keyframes slimeanimation{
-    0%{opacity: 0;}
-    39%{opacity: 0;
+@keyframes slimeanimation {
+    0% {
+        opacity: 0;
+        transform: rotate(0deg) scale(1);
+    }
+    39% {
+        opacity: 0;
         right: 0;
         bottom: 0;
+        transform: rotate(0deg) scale(1);
     }
-    55%{bottom:20vh}
-    59%{opacity: 100; bottom:0}
-    60%{right: 110vw;}
-    100%{opacity: 0;}
+    55% {
+        bottom: 20vh;
+        transform: rotate(15deg) scale(1.1, 0.9); /* little tilt + stretch */
+    }
+    59% {
+        opacity: 100;
+        bottom: 0;
+        transform: rotate(-10deg) scale(0.9, 1.1); /* squish effect */
+    }
+    60% {
+        right: 110vw;
+        transform: rotate(20deg) scale(1);
+    }
+    80% {
+        transform: rotate(-15deg) scale(1.05);
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(0deg) scale(1);
+    }
 }
+
 
 #dog{
     position: absolute;
